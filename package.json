@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm index.html",
+    "dev" : "nodemon index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smendoza120/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smendoza120/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Smendoza120/Portfolio#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

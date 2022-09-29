@@ -1,0 +1,123 @@
+.main-contacto{
+    background: rgba(#fff, .6);
+    width: 100%;
+    max-width: 1333px;
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        justify-content: space-around;
+        overflow: hidden;
+        .contacto{
+            padding-bottom: 20px;
+            font-size: 25px;
+            text-align: center;
+            font-weight: 300;
+            h3{
+                margin: 25px 0;
+                text-align: center;
+            }
+            ul{
+                text-align: center;
+                li{
+                    text-align: start;
+                    list-style: none;
+                    margin-bottom: 25px;
+                    padding-left: 20px;
+                    line-height: 5px;
+                    display: inline-block;
+                    i{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .nombre{
+                width: 246px;
+                height: 45px;
+                padding: 10px;
+                font-size: 28px;
+                border-radius: 3px;
+                border: none;
+            }
+            .email{
+                width: 246px;
+                height: 45px;
+                padding: 10px;
+                font-size: 28px;
+                border-radius: 3px;
+                border: none;
+            }
+            .asunto{
+                width: 500px;
+                height: 45px;
+                padding: 10px;
+                font-size: 28px;
+                border-radius: 3px;
+                border: none;
+                margin: 10px;
+            }
+            .mensaje{
+                width: 500px;
+                min-width: 500px;
+                max-width: 500px;
+                height: 100px;
+                min-height: 100px;
+                max-height: 180px;
+                border-radius: 3px;
+                border: none;
+                font-size: 28px;
+                padding: 10px;
+            }
+            .botones{
+                width: auto;
+                display: flex;
+                justify-content: center;
+                margin-top: 5px;
+                button{
+                    width: 110px;
+                    height: 34px;
+                    border-radius: 3px;
+                    border: none;
+                    cursor: pointer;
+                    font-family: 'Rubik', sans-serif;
+                    font-size: 18px;
+                    display: inline-block;
+                    &:hover{
+                        background-color: rgba($color: #000000, $alpha: .65);
+                        color: rgba(#fff, .6);
+                    }
+                }
+                input[type="submit"]{
+                    width: 110px;
+                    height: 34px;
+                    border-radius: 3px;
+                    border: none;
+                    cursor: pointer;
+                    font-family: 'Rubik', sans-serif;
+                    margin-left: 10px;
+                    font-size: 18px;
+                    display: inline-block;
+                    &:hover{
+                        background-color: rgba($color: #000000, $alpha: .65);
+                        color: rgba(#fff, .6);
+                    }
+                }
+            }
+        }
+        .mapa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 60px;
+            div{
+                margin-right: 50px;
+                iframe{
+                    width: 442px;
+                    height: 374px;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+$colorPrincipal: #fff;
+$colorHover : rgb(255, 255, 255, .8);
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    width: 90%;
+    max-width: 1333px;
+    .logo{
+        margin-left: 40px;
+    }
+    .menu{
+        a{
+            color: $colorPrincipal;
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 20px;
+            &:hover{
+                color: $colorHover;
+                text-decoration: line-through;
+            }
+        }
+        .dots{
+            display: none;
+        }
+    }
+}

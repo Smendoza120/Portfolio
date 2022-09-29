@@ -1,0 +1,123 @@
+@media screen and (max-width: 1070px) {
+//Acerca de
+    .main-acerca-de{
+        .contenedor-acerca-de{
+            .foto{
+                img{
+                    width: 270px;
+                }
+            }
+        }
+    }
+//Proyectos
+    .contenedor-proyectos{
+        align-items: center;
+        a{
+            
+            img{
+                width: 400px;
+            }
+        }
+    }
+//Contacto
+    .main-contacto{
+        .contenedor-contacto{
+            flex-direction: column;
+            margin: 0px 20px;
+            padding-bottom: 30px;
+            .contacto{
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                }
+            }
+            .mapa{
+                div{
+                    iframe{
+                        width: 960px;
+                        height: 374px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+//Acerca de
+    .main-acerca-de{
+        .contenedor-acerca-de{
+            flex-direction: column-reverse;
+            align-items: center;
+            .foto{
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+//skills
+    .main-skills{
+        .contenedor-skills{
+            flex-direction: column;
+            align-items: center;
+            .skills{
+                width: 98%;
+                padding-bottom: 20px;
+            }
+            .barras{
+                width: 70%;
+                ul{
+                    .barra{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+//proyectos
+    .main-proyectos{
+        .contenedor-proyectos{
+            flex-direction: column-reverse;
+            a{
+                img{
+                    width: 600px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+//Header
+    .contenedor{
+        align-items: center;
+        .menu{
+            a{
+                display: none;
+            }
+            .dots{
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+    }
+
+//Footer
+    footer{
+        a{
+            margin: 10px 0;
+            i{
+                margin: 10px 0;
+                transition: all .27s linear;
+                &:hover{
+                    transform: scale(1.1);
+                }   
+            }
+        }
+    }
+}

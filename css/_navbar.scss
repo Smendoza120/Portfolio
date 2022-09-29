@@ -1,14 +1,22 @@
 $colorPrincipal: #fff;
-$colorHover : rgb(255, 255, 255, .8);
+$colorHover : rgba(255, 255, 255, 0.8);
 .contenedor{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px;
-    width: 90%;
+    padding: 40px;
+    width: 100%;
     max-width: 1333px;
+    background: #000;
+    margin-top: -134px;
     .logo{
         margin-left: 40px;
+        a{
+            .logo2{
+                display: none;
+            }
+        }
     }
     .menu{
         a{
@@ -21,8 +29,9 @@ $colorHover : rgb(255, 255, 255, .8);
                 text-decoration: line-through;
             }
         }
-        .dots{
-            display: none;
-        }
+    }
+    .dots{
+        display: none;
+        
     }
 }

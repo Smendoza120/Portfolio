@@ -1,0 +1,33 @@
+.main-acerca-de{
+    background: rgba(#fff, .6);
+    width: 100%;
+    max-width: 1333px;
+    .contenedor-acerca-de{
+        display: flex;
+        font-size: 18px;
+        justify-content: space-between;
+        overflow: hidden;
+        .foto{
+            margin: 30px 50px;
+            img{
+                border-radius: 50%;
+                width: 370px;
+            }
+        }
+        .acerca-de{
+            margin: 30px;
+            h3{
+                padding-bottom: 20px;
+                font-size: 30px;
+                text-align: center;
+                font-weight: 600;
+            }
+            p{
+                font-size: 25px;
+                font-weight: 300;
+                text-align: justify;
+                line-height: 38px;
+            }
+        }
+    }
+}

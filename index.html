@@ -1,58 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/principal.css">
     <title>Contact | Front End Developer | Porfolio</title>
 </head>
 <body>
-    <!--barra de navegacion-->
-    <header class="header">
-        <div class="container_nav_bar">
-            <a href="/" class="logo"><img src="images/Logo_responsive.png" alt="Logo"></a>
-            <nav class="nav_bar">
-                <ul class="list_nav">
-                    <a href="#"><li>Acerca de </li></a>
-                    <a href="#"><li>Skills </li></a>
-                    <a href="#"><li>Proyectos </li></a>
-                    <a href="#"><li>Contacto</li></a>
-                </ul>
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <a href="/"><img src="images/Logo_responsive.png" alt="Fondo programacion desarrollador"></a>
+            </div>
+            
+            <nav class="menu">
+                <a href="#acerca-de">Acerca de</a>
+                <a href="#skills">Skills</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+                <img src="images/menu_inicial_responsive.png" alt="" class="dots">
             </nav>
         </div>
     </header>
-    <!--Acerca de-->
-    <div class="container_profile">
-        <div class="photo_profile">
 
+    <section class="main-acerca-de" id="acerca-de">
+        <div class="contenedor-acerca-de">
+            <div class="foto">
+                <img src="images/foto.jpg" alt="Harold Yulian Sanchez Alcantar">
+            </div>
+            <div class="acerca-de">
+                <h3>Acerca de:</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita animi cum qui id quidem, exercitationem iusto consectetur asperiores blanditiis mollitia vel dolores at veritatis itaque quis harum atque velit sint?</p>
+            </div>
         </div>
-        <div class="description_profile">
-            <h3>Acerca de</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugiat, molestias, odit corrupti alias quo dolorem libero assumenda cum laudantium accusantium iste non asperiores eos animi nam fugit, eum repellat!</p>
+    </section>
+    
+    <div class="fondo uno">
+    </div>
+
+    <section class="main-skills" id="skills">
+        <div class="contenedor-skills">
+            <div class="skills">
+                <h3>Skills</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consectetur magni harum deleniti sunt doloremque vel labore cupiditate quod. Recusandae, distinctio eveniet. Corporis, sapiente. Minima incidunt asperiores natus fugit culpa!</p>
+            </div>
+            <div class="barras">
+                <ul>
+                    <li>HTML</li>
+                    <div class="barra html-1">
+                        <div class="barra-html-2"></div>
+                    </div>
+                    <li>CSS - SASS</li>
+                    <div class="barra css-1">
+                        <div class="barra-css-2"></div>
+                    </div>
+                    <li>Java</li>
+                    <div class="barra java-1">
+                        <div class="barra-java-2"></div>
+                    </div>
+                    <li>JavaScript</li>
+                    <div class="barra javascript-1">
+                        <div class="barra-javascript-2"></div>
+                    </div>
+                    <li>Git - GitHub</li>
+                    <div class="barra git-1">
+                        <div class="barra-git-2"></div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="fondo dos">
+    </div>
+
+    <div class="main-proyectos" id="proyectos">
+        <div class="contenedor-proyectos">
+            <div class="proyecto-img">
+                <a href="#">
+                    <img src="images/Miniatura_proyecto.png" alt="Harold Yulian Sanchez Alcantar">
+                </a>
+            </div>
+            <div class="proyecto">
+                <h3>Proyectos</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita animi cum qui id quidem, exercitationem iusto consectetur asperiores blanditiis mollitia vel dolores at veritatis itaque quis harum atque velit sint?
+                </p>
+            </div>
         </div>
     </div>
-    <!--Fondo-->
-    <div class="fondo2">
-        
+
+    <div class="fondo tres">
     </div>
-    <div class="container_skills">
-        <div class="skills">
-            <h3>Skills</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, praesentium delectus veritatis at ipsum, ea autem vitae minus, nobis non itaque minima! Saepe iste debitis eius veniam earum doloribus porro?</p>
+
+    <section class="main-contacto" id="contacto">
+        <div class="contenedor-contacto">
+            <div class="contacto">
+                <h3>Contacto:</h3>
+                <ul>
+                    <li><i class='bx bxs-phone'></i> 311-804-7047</li>
+                    <li><i class='bx bx-envelope'></i> sanchezharold13@gmail.com</li>
+                </ul>
+                <input type="text" placeholder="Name" class="nombre">
+                <input type="email" placeholder="Email" class="email">
+                <input type="text" placeholder="Asunto" class="asunto">
+                <textarea placeholder="Mensaje" id="" cols="30" rows="10" class="mensaje"></textarea>
+                <div class="botones">
+                    <button>Cancelar</button>
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+            <div class="mapa">
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.1907737674097!2d-74.15992151189037!3d4.636302336505064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae97bc5160e9e759!2zNMKwMzgnMTAuNyJOIDc0wrAwOSczMy43Ilc!5e0!3m2!1ses!2sco!4v1664392763772!5m2!1ses!2sco" width="442" height="374" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
-        <div class="container_barras">
-            <h3>HTML</h3>
-            <div class="html barras"></div>
-            <h3>CSS</h3>
-            <div class="csss barras"></div>
-            <h3>JavaScript</h3>
-            <div class="javascript barras"></div>
-            <h3>Git-GitHub</h3>
-            <div class="git barras"></div>
-            <h3>Java</h3>
-            <div class="java barras"></div>
-        </div>
-    </div>
+    </section>
+
+    <footer>
+        <a href="#" target="_blank">
+            <i class='bx bxl-linkedin-square'></i>
+        </a>
+        <a href="#" target="_blank" class="doc">
+            <i class='bx bxs-file-doc'></i>
+        </a>
+        <a href="#" target="_blank">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+    </footer>
 </body>
 </html>

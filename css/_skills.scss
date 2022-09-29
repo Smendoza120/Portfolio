@@ -1,0 +1,44 @@
+.main-skills{
+    background: rgba(#fff, .6);
+    width: 100%;
+    max-width: 1333px;
+    .contenedor-skills{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 30px;
+        .skills{
+            width: 48%;
+            h3{
+                padding-bottom: 20px;
+                font-size: 30px;
+                text-align: center;
+                font-weight: 600;
+            }
+            p{
+                font-size: 25px;
+                font-weight: 300;
+                text-align: justify;
+                line-height: 38px;
+            }
+        }
+        .barras{
+            width: 48%;
+            ul{
+                li{
+                    color: #000;
+                    list-style: none;
+                    font-size: 30px;
+                }
+                .barra{
+                    width: 440px;
+                    height: 15px;
+                    background: #d9d9d9;
+                    border-radius: 3px;
+                    margin: 8px 0 5px 0;
+                    //Animacion pendiente
+                }
+            }
+        }
+    }
+}

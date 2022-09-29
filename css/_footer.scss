@@ -1,0 +1,24 @@
+footer{
+    background: #000;
+    max-width: 1333;
+    max-height: 190;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 45px;
+        i{
+            margin: 20px 0;
+            transition: all .27s linear;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        
+    }
+    .doc{
+        margin: 0 200px;
+    }
+}

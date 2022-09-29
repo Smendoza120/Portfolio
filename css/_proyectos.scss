@@ -1,0 +1,39 @@
+.main-proyectos{
+    background: rgba(#fff, .6);
+    width: 100%;
+    max-width: 1333px;
+    .contenedor-proyectos{
+        display: flex;
+        font-size: 18px;
+        justify-content: space-between;
+        overflow: hidden;
+        .proyecto-img{
+            margin: 30px 50px;
+            a{
+                img{
+                    border-radius: 3px;
+                    border: none;
+                    transition: all .3s linear;
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+        .proyecto{
+            margin: 30px;
+            h3{
+                text-align: center;
+                padding-bottom: 20px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            p{
+                text-align: justify;
+                font-size: 25px;
+                font-weight: 300;
+                line-height: 38px;
+            }
+        }
+    }
+}

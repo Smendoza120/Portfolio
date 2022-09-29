@@ -20,15 +20,21 @@ body {
 }
 
 .contenedor {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px;
-  width: 90%;
+  padding: 40px;
+  width: 100%;
   max-width: 1333px;
+  background: #000;
+  margin-top: -134px;
 }
 .contenedor .logo {
   margin-left: 40px;
+}
+.contenedor .logo a .logo2 {
+  display: none;
 }
 .contenedor .menu a {
   color: #fff;
@@ -40,11 +46,12 @@ body {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: line-through;
 }
-.contenedor .menu .dots {
+.contenedor .dots {
   display: none;
 }
 
 .main-acerca-de {
+  margin-top: 134px;
   background: rgba(255, 255, 255, 0.6);
   width: 100%;
   max-width: 1333px;
@@ -388,12 +395,31 @@ footer .doc {
   .contenedor {
     align-items: center;
   }
+  .contenedor .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    top: 134px;
+    right: 0;
+    background: black;
+    width: 30%;
+  }
   .contenedor .menu a {
+    margin: 20px;
+    color: #fff;
+  }
+  .contenedor .menu a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .contenedor .menu2 {
     display: none;
   }
-  .contenedor .menu .dots {
+  .contenedor .dots {
     display: inline-block;
     margin-right: 20px;
+    cursor: pointer;
   }
   footer a {
     margin: 10px 0;

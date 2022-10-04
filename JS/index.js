@@ -56,13 +56,8 @@ observador.observe(js);
 observador.observe(git);
 
 //Formulario
-const btnCancelar = d.querySelector('.cancelar');
 const btnEnviar = d.querySelector('.enviar');
 const formulario = d.querySelector('.formulario');
-
-btnCancelar.addEventListener('click', ()=>{
-    formulario.reset();
-});
 
 btnEnviar.addEventListener('click', ()=>{
     formulario.reset();

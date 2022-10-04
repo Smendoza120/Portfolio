@@ -1,33 +1,29 @@
 .main-acerca-de{
-    margin-top: 134px;
-    background: rgba(#fff, .6);
-    width: 100%;
-    max-width: 1333px;
+    background: rgba(255, 255, 255, 0.6);
+    margin-top: 20px;
     .contenedor-acerca-de{
         display: flex;
-        font-size: 18px;
-        justify-content: space-between;
-        overflow: hidden;
+        flex-direction: column-reverse;
+        color: #fff;
         .foto{
-            margin: 30px 50px;
+            margin: 30px 50px 15px 50px;
             img{
                 border-radius: 50%;
-                width: 370px;
+                width: 260px;
             }
         }
         .acerca-de{
-            margin: 30px;
+            color: #000;
             h3{
-                padding-bottom: 20px;
-                font-size: 30px;
                 text-align: center;
                 font-weight: 600;
+                margin: 10px;
+                font-size: 25px;
             }
             p{
-                font-size: 25px;
-                font-weight: 300;
+                padding: 0 10px;
                 text-align: justify;
-                line-height: 38px;
+                line-height: 25px;
             }
         }
     }

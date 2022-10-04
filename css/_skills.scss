@@ -1,44 +1,76 @@
 .main-skills{
-    background: rgba(#fff, .6);
-    width: 100%;
-    max-width: 1333px;
+    background: rgba(255, 255, 255, 0.6);
     .contenedor-skills{
         display: flex;
-        justify-content: space-between;
-        overflow: hidden;
-        padding: 30px;
+        flex-direction: column;
         .skills{
-            width: 48%;
             h3{
-                padding-bottom: 20px;
-                font-size: 30px;
                 text-align: center;
                 font-weight: 600;
+                margin-top: 10px;
+                font-size: 25px;
             }
             p{
-                font-size: 25px;
-                font-weight: 300;
+                padding: 5px 10px;
                 text-align: justify;
-                line-height: 38px;
             }
         }
         .barras{
-            width: 48%;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
             ul{
                 li{
-                    color: #000;
                     list-style: none;
-                    font-size: 30px;
                 }
                 .barra{
-                    width: 440px;
+                    width: 335px;
                     height: 15px;
                     background: #d9d9d9;
                     border-radius: 3px;
                     margin: 8px 0 5px 0;
-                    //Animacion pendiente
+
+                    transition: all .3s ease;
+                    .carga{
+                        border-radius: 3px;
+                        background: #360259;
+
+                        transition: all 1s ease;
+                        opacity: 0;
+                    }
+                    .carga-html{
+                        height: 100%;
+                        width: 70%;
+                        opacity: 1;
+                        transition: all 1s ease;
+                    }
+                    .carga-css{
+                        height: 100%;
+                        width: 65%;
+                        opacity: 1;
+                        transition: all 1s ease;
+                    }
+                    .carga-java{
+                        height: 100%;
+                        width: 30%;
+                        opacity: 1;
+                        transition: all 1s ease;
+                    }
+                    .carga-js{
+                        height: 100%;
+                        width: 50%;
+                        opacity: 1;
+                        transition: all 1s ease;
+                    }
+                    .carga-git{
+                        height: 100%;
+                        width: 70%;
+                        opacity: 1;
+                        transition: all 1s ease;
+                    }
                 }
             }
+            
         }
     }
 }

@@ -45,6 +45,7 @@ header{
                 font-size: 18px;
                 font-weight: 300;
                 font-family: "Rubik", sans-serif;
+                transition: all .3s ease;
                 &:hover{
                     text-decoration: line-through;
                 }

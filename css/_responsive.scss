@@ -52,12 +52,25 @@
                     width: 300px;
                 }
             }
+            .acerca-de{
+                p{
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                    line-height: 32px;
+                }
+            }
         }
     }
 
     .main-skills{
         .contenedor-skills{
             padding: 10px;
+            .skills{
+                p{
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+            }
             .barras{
                 display: flex;
                 flex-direction: column;
@@ -80,6 +93,12 @@
                     }
                 }
             }
+            .proyecto{
+                p{
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+            }
         }
     }
 
@@ -93,6 +112,11 @@
                 padding: 10px;
                 h3{
                     margin-bottom: 10px;
+                }
+                ul{
+                    li{
+                        font-size: 20px;
+                    }
                 }
             }
             .input-container{

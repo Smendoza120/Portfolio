@@ -34,39 +34,34 @@
                     .carga{
                         border-radius: 3px;
                         background: #360259;
-
-                        transition: all 1s ease;
-                        opacity: 0;
+                        transition: all .3s ease;
+                        width: 0%;
+                        opacity: 1;
                     }
                     .carga-html{
                         height: 100%;
                         width: 70%;
-                        opacity: 1;
-                        transition: all 1s ease;
+                        transition: all 1.2s ease;
                     }
                     .carga-css{
                         height: 100%;
                         width: 65%;
-                        opacity: 1;
-                        transition: all 1s ease;
+                        transition: all 1.4s ease;
                     }
                     .carga-java{
                         height: 100%;
                         width: 30%;
-                        opacity: 1;
-                        transition: all 1s ease;
+                        transition: all 1.6s ease;
                     }
                     .carga-js{
                         height: 100%;
                         width: 50%;
-                        opacity: 1;
-                        transition: all 1s ease;
+                        transition: all 1.8s ease;
                     }
                     .carga-git{
                         height: 100%;
                         width: 70%;
-                        opacity: 1;
-                        transition: all 1s ease;
+                        transition: all 2s ease;
                     }
                 }
             }

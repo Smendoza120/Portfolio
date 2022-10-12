@@ -56,29 +56,75 @@
                 <h3>Skills</h3>
                 <p>Mi conocimiento empezó de manera autónoma, buscando cursos en YouTube, Facebook y TikTok, una vez que entre en el mundo de la programación me empezo a interesar más el tema, por lo que ingrese a grupos y cursos virtuales en los cuales aprendí HTML, CSS, SASS, JavaScript, Figma, Git, GitHub y Java, actualmente me encuentro estudiando en el ministerio de las TIC, deseo seguir educándome y actualizándome con las demás tecnologías.</p>
             </div>
-            <div class="barras">
-                <ul>
-                    <li>HTML</li>
-                    <div class="barra html-1">
-                        <div class="barra-html-2 carga"></div>
+            <div class="contenedor-cards">
+                <div class="card html" id="card">
+                    <div class="titulo">
+                        <h3>HTML</h3>
+                        <p>Intermedio - Avanzado</p>
                     </div>
-                    <li>CSS - SASS</li>
-                    <div class="barra css-1">
-                        <div class="barra-css-2 carga"></div>
+                    <div class="texto" id="texto1">
+                        <ul>
+                            <li>Estructuración de contenido</li>
+                            <li>Desplazamiento de documentos</li>
+                            <li>Uso correcto de etiquetas</li>
+                            <li>Revisión de etiquetas</li>
+                        </ul>
                     </div>
-                    <li>Java</li>
-                    <div class="barra java-1">
-                        <div class="barra-java-2 carga" carga></div>
+                </div>
+                <div class="card css" id="card2">
+                    <div class="titulo">
+                        <h3>CSS</h3>
+                        <p>Intermedio - Avanzado</p>
                     </div>
-                    <li>JavaScript</li>
-                    <div class="barra javascript-1">
-                        <div class="barra-javascript-2 carga"></div>
+                    <div class="texto" id="texto2">
+                        <ul>
+                            <li>Posicionamiento</li>
+                            <li>Diseño responsivo</li>
+                            <li>Selectores</li>
+                        </ul>
                     </div>
-                    <li>Git - GitHub</li>
-                    <div class="barra git-1">
-                        <div class="barra-git-2 carga"></div>
+                </div>
+                <div class="card js" id="card3">
+                    <div class="titulo" id="titulo">
+                        <h3>JavaScript</h3>
+                        <p>Intermedio</p>
                     </div>
-                </ul>
+                    <div class="texto" id="texto3">
+                        <ul>
+                            <li>Modificación del DOM</li>
+                            <li>Creación de animaciones</li>
+                            <li>Estructura ordenada</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card git" id="card4">
+                    <div class="titulo" id="titulo">
+                        <h3>Git</h3>
+                        <p>Intermedio</p>
+                    </div>
+                    <div class="texto" id="texto4">
+                        <ul>
+                            <li>Clonar repositorios</li>
+                            <li>Crear repositorios</li>
+                            <li>Traer cambios</li>
+                            <li>Crear y cambiar ramas</li>
+                            <li>Subir cambios</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card figma" id="card5">
+                    <div class="titulo" id="titulo">
+                        <h3>Figma</h3>
+                        <p>Intermedio</p>
+                    </div>
+                    <div class="texto" id="texto5">
+                        <ul>
+                            <li>Crear bocetos</li>
+                            <li>Agrupar propiedades</li>
+                            <li>Exportar diseños</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -117,11 +163,9 @@
                 <div class="input">
                     <input type="text" placeholder="Nombre" class="nombre" required>
                     <input type="email" placeholder="Correo" required class="correo" name="email">
-                    <input type="text" placeholder="Asunto" class="asunto">
                     <textarea name="message" id="" cols="30" rows="10" class="mensaje" placeholder="Mensaje" required></textarea>
                 </div>
                 <div class="botones">
-                    <!-- <button class="cancelar">Cancelar</button> -->
                     <input type="submit" value="Enviar" class="enviar">
                 </div>
             </form>

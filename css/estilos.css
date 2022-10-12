@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/images/Fondo.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/Fondo.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -113,68 +113,86 @@ header .contenedor .dots {
 
 .main-skills {
   background: rgba(255, 255, 255, 0.6);
+  padding-bottom: 15px;
 }
 .main-skills .contenedor-skills {
   display: flex;
   flex-direction: column;
 }
+.main-skills .contenedor-skills .skills {
+  margin: 20px;
+  text-align: center;
+}
 .main-skills .contenedor-skills .skills h3 {
   text-align: center;
   font-weight: 600;
-  margin-top: 10px;
+  margin: 10px;
   font-size: 25px;
 }
 .main-skills .contenedor-skills .skills p {
-  padding: 5px 10px;
   text-align: justify;
 }
-.main-skills .contenedor-skills .barras {
-  padding: 10px;
-  font-size: 18px;
+.main-skills .contenedor-skills .contenedor-cards {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: none;
+  border-radius: 3px;
+  overflow-y: hidden;
+}
+.main-skills .contenedor-skills .contenedor-cards .card {
+  background: rgb(24, 22, 22);
+  color: rgba(255, 255, 255, 0.2);
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.main-skills .contenedor-skills .contenedor-cards .card:hover {
+  color: rgb(255, 255, 255);
+}
+.main-skills .contenedor-skills .contenedor-cards .card .titulo {
+  padding: 0px 15px;
+}
+.main-skills .contenedor-skills .contenedor-cards .card .titulo h3 {
+  padding-top: 10px;
+  padding-bottom: 3px;
+  font-size: 15px;
   font-weight: 500;
 }
-.main-skills .contenedor-skills .barras ul li {
+.main-skills .contenedor-skills .contenedor-cards .card .titulo p {
+  padding-bottom: 10px;
+  font-size: 10px;
+  font-weight: 300;
+}
+.main-skills .contenedor-skills .contenedor-cards .card .texto {
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.5s ease;
+  padding: 0px 10px;
+}
+.main-skills .contenedor-skills .contenedor-cards .card .texto ul {
   list-style: none;
 }
-.main-skills .contenedor-skills .barras ul .barra {
-  width: 335px;
-  height: 15px;
-  background: #d9d9d9;
-  border-radius: 3px;
-  margin: 8px 0 5px 0;
-  transition: all 0.3s ease;
+.main-skills .contenedor-skills .contenedor-cards .card .texto ul li {
+  text-align: start;
+  padding: 7px 5px;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: initial;
 }
-.main-skills .contenedor-skills .barras ul .barra .carga {
-  border-radius: 3px;
-  background: #360259;
-  transition: all 0.3s ease;
-  width: 0%;
-  opacity: 1;
-}
-.main-skills .contenedor-skills .barras ul .barra .carga-html {
-  height: 100%;
-  width: 70%;
-  transition: all 1.2s ease;
-}
-.main-skills .contenedor-skills .barras ul .barra .carga-css {
-  height: 100%;
-  width: 65%;
-  transition: all 1.4s ease;
-}
-.main-skills .contenedor-skills .barras ul .barra .carga-java {
-  height: 100%;
-  width: 30%;
-  transition: all 1.6s ease;
-}
-.main-skills .contenedor-skills .barras ul .barra .carga-js {
-  height: 100%;
-  width: 50%;
-  transition: all 1.8s ease;
-}
-.main-skills .contenedor-skills .barras ul .barra .carga-git {
-  height: 100%;
-  width: 70%;
-  transition: all 2s ease;
+.main-skills .contenedor-skills .contenedor-cards .card .textoEfecto {
+  height: 80%;
+  overflow: auto;
+  transition: all 0.5s ease;
 }
 
 .main-proyectos {
@@ -384,12 +402,6 @@ footer a:hover {
     font-size: 20px;
     line-height: 32px;
   }
-  .main-skills .contenedor-skills .barras {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .main-proyectos .contenedor-proyectos {
     padding: 10px 0;
   }
@@ -470,6 +482,15 @@ footer a:hover {
   header .dots {
     display: none;
   }
+  .main-skills .contenedor-skills .contenedor-cards .card .titulo h3 {
+    font-size: 20px;
+  }
+  .main-skills .contenedor-skills .contenedor-cards .card .titulo p {
+    font-size: 15px;
+  }
+  .main-skills .contenedor-skills .contenedor-cards .card .texto ul li {
+    font-size: 15px;
+  }
 }
 @media screen and (min-width: 1366px) {
   .main-acerca-de {
@@ -489,11 +510,8 @@ footer a:hover {
     line-height: 35px;
   }
   .main-skills .contenedor-skills {
-    flex-direction: row;
+    flex-direction: column;
     font-size: 23px;
-  }
-  .main-skills .contenedor-skills .skills {
-    width: 58%;
   }
   .main-skills .contenedor-skills .skills h3 {
     font-size: 30px;
@@ -502,20 +520,14 @@ footer a:hover {
   .main-skills .contenedor-skills .skills p {
     line-height: 35px;
   }
-  .main-skills .contenedor-skills .barras {
-    width: 38%;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  .main-skills .contenedor-skills .contenedor-cards .card .titulo h3 {
+    font-size: 20px;
   }
-  .main-skills .contenedor-skills .barras ul li {
-    font-size: 28px;
-    font-weight: 400;
+  .main-skills .contenedor-skills .contenedor-cards .card .titulo p {
+    font-size: 15px;
   }
-  .main-skills .contenedor-skills .barras ul .barra {
-    width: 450px;
+  .main-skills .contenedor-skills .contenedor-cards .card .texto ul li {
+    font-size: 15px;
   }
   .main-proyectos .contenedor-proyectos {
     flex-direction: row;
@@ -590,6 +602,15 @@ footer a:hover {
     margin: 15px 0;
   }
 }
+@media screen and (min-width: 1440px) {
+  .main-skills .contenedor-skills .contenedor-cards {
+    align-items: center;
+    justify-content: center;
+  }
+  .main-skills .contenedor-skills .contenedor-cards .card .texto ul li {
+    text-align: center;
+  }
+}
 .fondo {
   width: 100%;
   height: 100%;
@@ -603,11 +624,11 @@ footer a:hover {
 }
 
 .dos {
-  background: url(/images/fondo4.png), rgb(0, 0, 0);
+  background: url(../images/fondo4.png), rgb(0, 0, 0);
   height: 220px;
 }
 
 .tres {
-  background: url(/images/Fondo3.png), rgb(0, 0, 0);
+  background: url(../images/Fondo3.png), rgb(0, 0, 0);
   height: 220px;
 }/*# sourceMappingURL=estilos.css.map */

@@ -71,12 +71,6 @@
                     line-height: 32px;
                 }
             }
-            .barras{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
         }
     }
 
@@ -176,6 +170,30 @@
             display: none;
         }
     }
+
+    .main-skills{
+        .contenedor-skills{
+            .contenedor-cards{
+                .card{
+                    .titulo{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                    .texto{
+                        ul{
+                            li{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1366px) {
@@ -202,10 +220,9 @@
 
     .main-skills{
         .contenedor-skills{
-            flex-direction: row;
+            flex-direction: column;
             font-size: 23px;
             .skills{
-                width: 58%;
                 h3{
                     font-size: 30px;
                     margin-top: 20px;
@@ -214,20 +231,22 @@
                     line-height: 35px;
                 }
             }
-            .barras{
-                width: 38%;
-                margin-left: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: start;
-                ul{
-                    li{
-                        font-size: 28px;
-                        font-weight: 400;
+            .contenedor-cards{
+                .card{
+                    .titulo{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
                     }
-                    .barra{
-                        width: 450px;
+                    .texto{
+                        ul{
+                            li{
+                                font-size: 15px;
+                            }
+                        }
                     }
                 }
             }
@@ -318,6 +337,26 @@
         a{
             font-size: 60px;
             margin: 15px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-skills{
+        .contenedor-skills{
+            .contenedor-cards{
+                align-items: center;
+                justify-content: center;
+                .card{
+                    .texto{
+                        ul{
+                            li{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

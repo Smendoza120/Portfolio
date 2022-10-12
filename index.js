@@ -31,12 +31,18 @@ card.addEventListener('mouseenter', () => {
 card.addEventListener('mouseleave', () => {
     texto1.classList.remove('textoEfecto');
 });
+card.addEventListener('click', () => {
+    texto1.classList.toggle('textoEfecto');
+});
 
 card2.addEventListener('mouseenter', () => {
     texto2.classList.add('textoEfecto');
 });
 card2.addEventListener('mouseleave', () => {
     texto2.classList.remove('textoEfecto');
+});
+card2.addEventListener('click', () => {
+    texto2.classList.toggle('textoEfecto');
 });
 
 card3.addEventListener('mouseenter', () => {
@@ -45,6 +51,9 @@ card3.addEventListener('mouseenter', () => {
 card3.addEventListener('mouseleave', () => {
     texto3.classList.remove('textoEfecto');
 });
+card3.addEventListener('click', () => {
+    texto3.classList.toggle('textoEfecto');
+});
 
 card4.addEventListener('mouseenter', () => {
     texto4.classList.add('textoEfecto');
@@ -52,12 +61,18 @@ card4.addEventListener('mouseenter', () => {
 card4.addEventListener('mouseleave', () => {
     texto4.classList.remove('textoEfecto');
 });
+card4.addEventListener('click', () => {
+    texto4.classList.toggle('textoEfecto');
+});
 
 card5.addEventListener('mouseenter', () => {
     texto5.classList.add('textoEfecto');
 });
 card5.addEventListener('mouseleave', () => {
     texto5.classList.remove('textoEfecto');
+});
+card5.addEventListener('click', () => {
+    texto5.classList.toggle('textoEfecto');
 });
 
 //Formulario

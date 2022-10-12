@@ -94,6 +94,7 @@ header .contenedor .dots {
 }
 .main-acerca-de .contenedor-acerca-de .foto img {
   border-radius: 50%;
+  border: 2px solid black;
   width: 260px;
 }
 .main-acerca-de .contenedor-acerca-de .acerca-de {
@@ -120,17 +121,17 @@ header .contenedor .dots {
   flex-direction: column;
 }
 .main-skills .contenedor-skills .skills {
-  margin: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .main-skills .contenedor-skills .skills h3 {
   text-align: center;
   font-weight: 600;
-  margin: 10px;
   font-size: 25px;
 }
 .main-skills .contenedor-skills .skills p {
   text-align: justify;
+  padding-top: 10px;
 }
 .main-skills .contenedor-skills .contenedor-cards {
   max-width: 100%;
@@ -190,7 +191,7 @@ header .contenedor .dots {
   text-align: initial;
 }
 .main-skills .contenedor-skills .contenedor-cards .card .textoEfecto {
-  height: 80%;
+  height: 90%;
   overflow: auto;
   transition: all 0.5s ease;
 }
@@ -515,7 +516,6 @@ footer a:hover {
   }
   .main-skills .contenedor-skills .skills h3 {
     font-size: 30px;
-    margin-top: 20px;
   }
   .main-skills .contenedor-skills .skills p {
     line-height: 35px;

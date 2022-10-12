@@ -17,43 +17,48 @@ dots.addEventListener("click", ()=>{
     menu.classList.toggle("menu2")
 })
 
-//Animacion barras de carga
+//Animacion cards skills
+let card = document.getElementById('card');
+let texto1 = document.getElementById('texto1');
+let texto2 = document.getElementById('texto2');
+let texto3 = document.getElementById('texto3');
+let texto4 = document.getElementById('texto4');
+let texto5 = document.getElementById('texto5');
 
-const html = d.querySelector('.barra-html-2');
-const css = d.querySelector('.barra-css-2');
-const java = d.querySelector('.barra-java-2');
-const js = d.querySelector('.barra-javascript-2');
-const git = d.querySelector('.barra-git-2');
-
-const cargarBarra = (entradas, observador) => {
-    entradas.forEach((entrada) => {
-        if(entrada.isIntersecting){
-            html.classList.add('carga-html');
-            css.classList.add('carga-css');
-            java.classList.add('carga-java');
-            js.classList.add('carga-js');
-            git.classList.add('carga-git');
-        } else {
-            html.classList.remove('carga-html');
-            css.classList.remove('carga-css');
-            java.classList.remove('carga-java');
-            js.classList.remove('carga-js');
-            git.classList.remove('carga-git');
-        }
-    });
-}
-
-const observador = new IntersectionObserver(cargarBarra, {
-    root: null,
-    rootMargin: '0px 0px 0px 0px',
-    threshold: 1.0
+card.addEventListener('mouseenter', () => {
+    texto1.classList.add('textoEfecto');
+});
+card.addEventListener('mouseleave', () => {
+    texto1.classList.remove('textoEfecto');
 });
 
-observador.observe(html);
-observador.observe(css);
-observador.observe(java);
-observador.observe(js);
-observador.observe(git);
+card2.addEventListener('mouseenter', () => {
+    texto2.classList.add('textoEfecto');
+});
+card2.addEventListener('mouseleave', () => {
+    texto2.classList.remove('textoEfecto');
+});
+
+card3.addEventListener('mouseenter', () => {
+    texto3.classList.add('textoEfecto');
+});
+card3.addEventListener('mouseleave', () => {
+    texto3.classList.remove('textoEfecto');
+});
+
+card4.addEventListener('mouseenter', () => {
+    texto4.classList.add('textoEfecto');
+});
+card4.addEventListener('mouseleave', () => {
+    texto4.classList.remove('textoEfecto');
+});
+
+card5.addEventListener('mouseenter', () => {
+    texto5.classList.add('textoEfecto');
+});
+card5.addEventListener('mouseleave', () => {
+    texto5.classList.remove('textoEfecto');
+});
 
 //Formulario
 const btnEnviar = d.querySelector('.enviar');

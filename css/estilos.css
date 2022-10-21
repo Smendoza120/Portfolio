@@ -154,7 +154,7 @@ header .contenedor .dots {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 .main-skills .contenedor-skills .contenedor-cards .card:hover {
   color: rgb(255, 255, 255);
@@ -177,7 +177,7 @@ header .contenedor .dots {
   height: 0;
   overflow: hidden;
   width: 100%;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
   padding: 0px 10px;
 }
 .main-skills .contenedor-skills .contenedor-cards .card .texto ul {
@@ -192,8 +192,7 @@ header .contenedor .dots {
 }
 .main-skills .contenedor-skills .contenedor-cards .card .textoEfecto {
   height: 90%;
-  overflow: auto;
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .main-proyectos {

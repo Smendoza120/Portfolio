@@ -37,7 +37,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                transition: all .5s ease;
+                transition: .5s ease;
                 &:hover{
                     color: rgb(255, 255, 255);
                 }
@@ -59,7 +59,7 @@
                     height: 0;
                     overflow: hidden;
                     width: 100%;
-                    transition: all .5s ease;
+                    transition: .5s ease;
                     padding: 0px 10px;
                     ul{
                         list-style: none;
@@ -74,8 +74,7 @@
                 }
                 .textoEfecto{
                     height: 90%;
-                    overflow: auto;
-                    transition: all .5s ease;
+                    transition: .5s ease;
                 }
             }
         }

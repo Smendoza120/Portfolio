@@ -75,6 +75,37 @@ card5.addEventListener('click', () => {
     texto5.classList.toggle('textoEfecto');
 });
 
+//Proyect cart animation 
+const firstCard = d.querySelector('.first');
+const secondCard = d.querySelector('.second');
+const thirdCard = d.querySelector('.third');
+const carts = d.querySelector('.proyectos__carts');
+
+const cargarImagen = (entradas, observador)=>{
+    entradas.forEach((entrada)=>{
+        if(entrada.isIntersecting){
+            firstCard.classList.add('proyectos__carts-animation');
+            secondCard.classList.add('proyectos__carts-animation');
+            thirdCard.classList.add('proyectos__carts-animation');
+        } else {
+            firstCard.classList.remove('proyectos__carts-animation');
+            secondCard.classList.remove('proyectos__carts-animation');
+            thirdCard.classList.remove('proyectos__carts-animation');
+        }
+    });
+}
+
+const observador = new IntersectionObserver(cargarImagen, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+});
+
+observador.observe(firstCard);
+observador.observe(secondCard);
+observador.observe(thirdCard);
+
+
 //Formulario
 const btnEnviar = d.querySelector('.input__send');
 const btnCancelar = d.querySelector('.input__cancel');

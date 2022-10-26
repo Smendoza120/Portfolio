@@ -76,9 +76,21 @@ card5.addEventListener('click', () => {
 });
 
 //Formulario
-const btnEnviar = d.querySelector('.enviar');
+const btnEnviar = d.querySelector('.input__send');
+const btnCancelar = d.querySelector('.input__cancel');
 const formulario = d.querySelector('.formulario');
+const nameMail = d.querySelector('.nombre');
+const mail = d.querySelector('.correo');
+const textArea = d.querySelector('.mensaje');
 
-btnEnviar.addEventListener('click', ()=>{
-    formulario.reset();
+
+btnEnviar.addEventListener('submit', ()=>{
+    nameMail.value = '';
+    mail.value = '';
+    textArea.value = '';
 });
+
+btnCancelar.addEventListener('click', ()=>{
+    formulario.reset()
+})
+

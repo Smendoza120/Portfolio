@@ -424,6 +424,7 @@ header .contenedor .dots {
 .input__subject {
   padding: 10px;
   border: none;
+  border-radius: 0px;
   width: 319px;
   margin-top: 1px;
 }

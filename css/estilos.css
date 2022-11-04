@@ -288,6 +288,9 @@ header .contenedor .dots {
 .proyectos__paragraph {
   margin: 10px 0 5px 5px;
   font-size: 15px;
+  text-align: justify;
+  min-height: 180px;
+  line-height: 21.5px;
 }
 .proyectos__container-link {
   display: flex;

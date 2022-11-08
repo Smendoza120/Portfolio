@@ -4,7 +4,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 20px;
         @media (min-width: 720px){
             flex-direction: row;
@@ -27,12 +27,20 @@
         }
     }
     &__title{
-        margin-bottom: 10px;
+        margin-bottom: 40px;
         font-weight: 600;
         font-size: 25px;
     }
     &__list{
         list-style: none;
+    }
+    &__profile{
+        margin-bottom: 5px;
+        display: flex;
+        gap: 10px;
+        @media (min-width: 1115px){
+            font-size: 18px;
+        }
     }
     &__phone{
         margin-bottom: 5px;

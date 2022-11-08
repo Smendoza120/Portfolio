@@ -679,7 +679,7 @@ footer a:hover {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1115px) {
   .main-acerca-de {
     font-size: 23px;
   }
@@ -697,14 +697,22 @@ footer a:hover {
     line-height: 35px;
   }
   .main-skills .contenedor-skills {
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     font-size: 23px;
+    gap: 20px;
+  }
+  .main-skills .contenedor-skills .skills {
+    width: 900px;
   }
   .main-skills .contenedor-skills .skills h3 {
     font-size: 30px;
   }
   .main-skills .contenedor-skills .skills p {
     line-height: 35px;
+  }
+  .main-skills .contenedor-skills .contenedor-cards .card {
+    height: 350px;
   }
   .main-skills .contenedor-skills .contenedor-cards .card .titulo h3 {
     font-size: 20px;

@@ -196,7 +196,7 @@
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1115px) {
     .main-acerca-de{
         font-size: 23px;
         .contenedor-acerca-de{
@@ -220,9 +220,12 @@
 
     .main-skills{
         .contenedor-skills{
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
             font-size: 23px;
+            gap: 20px;
             .skills{
+                width: 900px;
                 h3{
                     font-size: 30px;
                 }
@@ -232,6 +235,7 @@
             }
             .contenedor-cards{
                 .card{
+                    height: 350px;
                     .titulo{
                         h3{
                             font-size: 20px;
@@ -253,6 +257,7 @@
     }
 
     .main-proyectos{
+        
         .contenedor-proyectos{
             flex-direction: row;
             align-items: initial;

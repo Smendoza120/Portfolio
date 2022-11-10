@@ -79,4 +79,95 @@
             }
         }
     }
+    @media screen and (min-width: 720px){
+        .contenedor-skills{
+            padding: 10px;
+            .skills{
+                p{
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 721px){
+        .contenedor-skills{
+            .contenedor-cards{
+                .card{
+                    .titulo{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                    .texto{
+                        ul{
+                            li{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1115px) {
+        .contenedor-skills{
+            flex-direction: row;
+            align-items: center;
+            font-size: 23px;
+            gap: 20px;
+            .skills{
+                width: 900px;
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    line-height: 35px;
+                }
+            }
+            .contenedor-cards{
+                .card{
+                    height: 350px;
+                    .titulo{
+                        h3{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                    .texto{
+                        ul{
+                            li{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        .contenedor-skills{
+            .contenedor-cards{
+                align-items: center;
+                justify-content: center;
+                .card{
+                    .texto{
+                        ul{
+                            li{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

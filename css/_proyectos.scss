@@ -19,10 +19,6 @@
         justify-content: center;
         padding: 30px 10px;
         gap: 30px;
-        @media (min-width: 1115px){
-            flex-direction: row;
-            padding: 30px 50px;
-        }
     }
     &__carts{
         padding: 10px;
@@ -31,9 +27,6 @@
         width: 80%;
         opacity: 0;
         transition: all .5s ease;
-        @media (min-width: 1115px){
-            width: 50%;
-        }
         &:hover{
             transform: scale(1.02);
             box-shadow: 0px 5px 7px 5px rgba(0,0,0,0.44);
@@ -54,12 +47,6 @@
             height: 20%;
             border-radius: 3px;
             margin-left: 5px;
-            @media (min-width: 720px){
-                width: 30%;
-            }
-            @media (min-width: 1115px){
-                width: 40%;
-            }
         }
         &-list{
             display: flex;
@@ -69,9 +56,6 @@
             align-items: center;
             color: white;
             justify-content: center;
-            @media (min-width: 720px){
-                gap: 20px;
-            }
             &-technologies{
                 font-size: 12px;
             }
@@ -79,7 +63,7 @@
     }
     
     &__paragraph{
-        margin: 10px 0 5px 5px;
+        margin: 10px 10px 5px 5px;
         font-size: 15px;
         text-align: justify;
         min-height: 180px;
@@ -100,6 +84,54 @@
         &:hover{
             cursor: pointer;
             text-decoration: underline;
+        }
+    }
+    @media (min-width: 720px){
+        &__container{
+            padding-top: 20px;
+        }
+        &__title{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        &__carts{
+            &-title{
+            font-size: 20px;
+            }
+            &-technologies{
+                height: 22%;
+                width: 30%;
+            }
+            &-list{
+                gap: 20px;
+            }
+        }
+        &__paragraph{
+            font-size: 17px;
+        }
+    }
+    @media (min-width: 1115px){
+        &__container{
+            flex-direction: row;
+            align-items: initial;
+            font-size: 23px;
+            padding: 10px 0;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        &__cart-container{
+            flex-direction: row;
+            padding: 30px 50px;
+        }
+        &__carts{
+            width: 50%;
+            &-technologies{
+                width: 44%;
+            }
+        }
+        &__paragraph{
+            font-size: 14px;
         }
     }
 }

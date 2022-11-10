@@ -6,25 +6,12 @@
         justify-content: center;
         align-items: flex-start;
         padding: 20px;
-        @media (min-width: 720px){
-            flex-direction: row;
-        }
-        @media (min-width: 1115px){
-            padding: 40px;
-        }
     }
     &__info{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
-        @media (min-width: 720px){
-            margin-bottom: 0;
-            margin-right: 20px;
-        }
-        @media (min-width: 1115px){
-            margin-right: 150px;
-        }
     }
     &__title{
         margin-bottom: 40px;
@@ -38,22 +25,41 @@
         margin-bottom: 5px;
         display: flex;
         gap: 10px;
-        @media (min-width: 1115px){
-            font-size: 18px;
-        }
     }
     &__phone{
         margin-bottom: 5px;
         display: flex;
         gap: 10px;
-        @media (min-width: 1115px){
-            font-size: 18px;
-        }
     }
     &__email{
         display: flex;
         gap: 10px;
-        @media (min-width: 1115px){
+    }
+    @media (min-width: 720px){
+        &__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__info{
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+    @media (min-width: 1115px){
+        &__container{
+            padding: 40px;
+        }
+        &__info{
+            margin-right: 150px;
+        }
+        &__profile{
+            font-size: 18px;
+        }
+        &__phone{
+            font-size: 18px;
+        }
+        &__email{
             font-size: 18px;
         }
     }
@@ -80,18 +86,12 @@
         width: 159px;
         border-radius: 3px 0px 0px 0px;
         border: none;
-        @media (min-width: 1115px){
-            width: 250px;
-        }
     }
     &__email{
         padding: 10px;
         border-radius: 0px 3px 0px 0px;
         border: none;
         width: 159px;
-        @media (min-width: 1115px){
-            width: 250px;
-        }
     }
     &__subject{
         padding: 10px;
@@ -99,9 +99,6 @@
         border-radius: 0px;
         width: 319px;
         margin-top: 1px;
-        @media (min-width: 1115px){
-            width: 501px;
-        }
     }
     &__message{
         width: 319px;
@@ -114,11 +111,6 @@
         border: none;
         margin-top: 1px;
         font-family: "Rubik", sans-serif;
-        @media (min-width: 1115px){
-            width: 501px;
-            max-width: 501px;
-            min-width: 501px;
-        }
     }
     &__buttons-container{
         width: 310px;
@@ -127,10 +119,6 @@
         align-items: center;
         justify-content: end;
         gap: 5px;
-        @media (min-width: 1115px){
-            width: 485px;
-            height: 40px;
-        }
     }
     &__send{
         padding: 5px 15px;
@@ -140,9 +128,6 @@
             background: rgba($color: #000000, $alpha: 55);
             color: rgba(255, 255, 255, 0.70);
             cursor: pointer;
-        }
-        @media (min-width: 1115px){
-            padding: 8px 25px;
         }
     }
     &__cancel{
@@ -154,7 +139,30 @@
             color: rgba(255, 255, 255, 0.70);
             cursor: pointer;
         }
-        @media (min-width: 1115px){
+    }
+    @media(min-width: 1115px){
+        &__name{
+            width: 250px;
+        }
+        &__email{
+            width: 250px;
+        }
+        &__subject{
+            width: 501px;
+        }
+        &__message{
+            width: 501px;
+            max-width: 501px;
+            min-width: 501px;
+        }
+        &__buttons-container{
+            width: 485px;
+            height: 40px;
+        }
+        &__send{
+            padding: 8px 25px;
+        }
+        &__cancel{
             padding: 8px 18px;
         }
     }

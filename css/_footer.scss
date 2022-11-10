@@ -14,4 +14,10 @@ footer{
             transform: scale(1.05);
         }
     }
+    @media(min-width: 1115px){
+        a{
+            font-size: 60px;
+            margin: 15px 0;
+        }
+    }
 }

@@ -81,16 +81,15 @@ const secondCard = d.querySelector('.second');
 const thirdCard = d.querySelector('.third');
 const carts = d.querySelector('.proyectos__carts');
 
+const contenedor = d.getElementById('contenedor');
+
 const cargarImagen = (entradas, observador)=>{
     entradas.forEach((entrada)=>{
         if(entrada.isIntersecting){
+            contenedor.classList.add('proyectos__carts-animation');
             firstCard.classList.add('proyectos__carts-animation');
             secondCard.classList.add('proyectos__carts-animation');
             thirdCard.classList.add('proyectos__carts-animation');
-        } else {
-            firstCard.classList.remove('proyectos__carts-animation');
-            secondCard.classList.remove('proyectos__carts-animation');
-            thirdCard.classList.remove('proyectos__carts-animation');
         }
     });
 }
@@ -104,7 +103,7 @@ const observador = new IntersectionObserver(cargarImagen, {
 observador.observe(firstCard);
 observador.observe(secondCard);
 observador.observe(thirdCard);
-
+observador.observe(contenedor)
 
 //Formulario
 const btnEnviar = d.querySelector('.input__send');

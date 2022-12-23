@@ -14,10 +14,18 @@ footer{
             transform: scale(1.05);
         }
     }
+    .github,
+    .doc{
+        font-size: 35px;
+    }
     @media(min-width: 1115px){
         a{
             font-size: 60px;
             margin: 15px 0;
+        }
+        .github,
+        .doc{
+            font-size: 60px;
         }
     }
 }
